@@ -274,4 +274,4 @@ sudo ufw status verbose
 Here is the picture of what it suppose to look,
 ![Screenshot 2024-12-03 225246](https://github.com/user-attachments/assets/1c28cf02-4a69-40e9-b1fb-4f130c24648a)
 
-
+*Important* You will need to do these tasks for the two droplets you've made
