@@ -1,7 +1,41 @@
+
+## Assignment 3 Part 2
+
+Before you go on ahead with the tasks, you first need to make a droplet, then a load balancer in order to start things. Otherwise you'll stuck in zone 1
+
+# Creating a Droplet
+Here are the steps in creating a droplet
+```
+Step 1. On DigitanOcean, to create a droplet. First click on Create, then Droplets.
+Step 2. Then click on San Francisco 
+Step 3. On Datacenter, click on San Francisco - Datacenter 3 - SFO3
+Step 4. Go to Custom Images, select Arch Linux that is recently new and ends with .qcow2
+Step 5. Make sure to select Premium AMD, then click $7/mo
+Step 6. Select your SSH Key
+Step 7. On Quantity, make sure to icrease the Droplet to 2, then name your Hostname (to whatever you perfer)
+Step 8. Make sure to name your Tags, web
+Step 9. Then, create Droplet 
+```
+----
+
+# Creating a load balancer
+
+Here are the steps in creating a load balancer:
+```
+Step 1. Click on Create
+Step 2. Go to Load Balancers
+Step 3. Click on Regional 
+Step 4. Select San Francisco - Datacenter 3 - SFO3
+Step 5. Click on External (Public), make sure to click on the web tag
+Step 6. Then, create Load Balancer
+```
+----
+# Task 1
 - First set up a system user webgen with a home directory by using the code below
 ```
 sudo useradd -r -m -d /var/Lib/webgen -s /usr/sbin/nologin
 ```
+
 - Before we go ahead, we must create a home directory 
 ```
 sudo mkdir /var/Lib/webgen
