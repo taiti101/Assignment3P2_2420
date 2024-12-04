@@ -1,0 +1,9 @@
+[Unit]
+Description=Run the generate_index at 5am on a daily basis
+
+[Timer]
+OnCalendar=*-*-* 05:00:00
+Persistent=true
+
+[Install]
+WantedBy=timer.target
