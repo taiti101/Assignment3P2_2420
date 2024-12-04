@@ -178,6 +178,7 @@ sudo nvim /etc/nginx/nginx.conf
 ```
 *Important* The only thing you need to edit in the ngnix.conf file is replace the #user http; (top left) with user webgen; and include the /etc/nginx/conf.d/*.conf directory above the include mine.types;
 pictures below for example,
+![Screenshot 2024-12-03 225112](https://github.com/user-attachments/assets/e69e7a0f-ade6-470b-9640-31adc192f5e4)
 
 ----
 
