@@ -92,6 +92,8 @@ Now you're done, to see your structure, just type:
 ```
 sudo tree /var/lib/webgen
 ```
+Here is the picture of what it suppose to look like:
+![Screenshot 2024-12-03 224611](https://github.com/user-attachments/assets/1a72eb39-7da5-46ca-a5d6-869529ff38fa)
 —
 # Task 2
 - We will now create a service file for both generate-index.service and generate-index. timer 
