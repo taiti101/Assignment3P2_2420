@@ -5,18 +5,17 @@ Before you go on ahead with the tasks, you first need to make a droplet, then a 
 
 # Creating a Droplet
 Here are the steps in creating a droplet
-```
+
 Step 1. On DigitanOcean, to create a droplet. First click on Create, then Droplets.
 Step 2. Then click on San Francisco 
 Step 3. On Datacenter, click on San Francisco - Datacenter 3 - SFO3
-Step 4. Go to Custom Images, select Arch Linux that is recently new and ends with .qcow2
+Step 4. Go to Custom Images, select Arch Linux (If you don't have any, you may have to download it) that is recently new and ends with .qcow2
 Step 5. Up to you but I would recommend selecting Premium AMD, then click $7/mo
-![Screenshot 2024-12-03 233926](https://github.com/user-attachments/assets/926d31d5-3d6f-4d86-a749-ef8f05e67d48)
 Step 6. Select your SSH Key
 Step 7. On Quantity, make sure to icrease the Droplet to 2, then name your Hostname (to whatever you perfer)
 Step 8. Make sure to name your Tags, web
 Step 9. Then, create Droplet 
-```
+
 Here is a picture of what it suppose to look like
 ![Screenshot 2024-12-03 231154](https://github.com/user-attachments/assets/59bf5562-8812-428f-838c-495a45f8a6f4)
 
