@@ -16,6 +16,9 @@ Step 7. On Quantity, make sure to icrease the Droplet to 2, then name your Hostn
 Step 8. Make sure to name your Tags, web
 Step 9. Then, create Droplet 
 ```
+Here is a picture of what it suppose to look like
+![Screenshot 2024-12-03 231154](https://github.com/user-attachments/assets/59bf5562-8812-428f-838c-495a45f8a6f4)
+
 ----
 You're done, now onto..
 # Creating a load balancer
