@@ -17,7 +17,7 @@ Step 8. Make sure to name your Tags, web
 Step 9. Then, create Droplet 
 ```
 ----
-
+You're done, now onto..
 # Creating a load balancer
 
 Here are the steps in creating a load balancer:
