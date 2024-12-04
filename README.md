@@ -26,8 +26,10 @@ You're done, now onto..
 Here are the steps in creating a load balancer:
 
 Step 1. If you look at your left bar of the screen, look for Networking and click on it, then click Create
+
 Step 2. Go to Load Balancers, then click on Regional
 Step 3. Select San Francisco - 3
+
 ![Screenshot 2024-12-03 233205](https://github.com/user-attachments/assets/d7c45a92-1bc4-4454-a58a-017feb7d4362)
 Step 4. Click on External (Public), make sure to click on the web tag
 ![Screenshot 2024-12-03 233242](https://github.com/user-attachments/assets/7243bea2-3e63-4c1e-bacb-0f50c4efac0b)
