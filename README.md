@@ -103,4 +103,129 @@ Now that it's done, make sure to run this command to reload
 sudo systemctl daemon-reaload
 ```
 
-After the command reload, we need to start 
+After the command reload, we need to start and enable the services
+```
+sudo systemctl start generate-index.service
+sudo systemctl enable generate-index.service
+
+sudo systemctl start generate-index.timer
+sudo systemctl enable generate-index.timer
+```
+
+You can check your services status by typing:
+```
+sudo systemctl status generate-index.service
+```
+
+----
+
+# Task 3
+
+For this task, we will have to install and configure nginx
+
+- To install nginx type,
+```
+sudo pacman -S ngnix
+```
+- After that, create and edit the nginx.config file 
+Before you go ahead, make sure to create directories so you won't face any issues later on.
+```
+sudo mkdir sites-available
+```
+```
+sudo mkdir sites-enabled
+```
+----
+Create this, 
+```
+sudo nvim /etc/nginx/nginx.conf
+```
+*Important* The only thing you need to edit in the ngnix.conf file is replace the #user http; (top left) with user webgen; and include the /etc/nginx/conf.d/*.conf directory above the include mine.types;
+pictures below for example,
+
+----
+
+Now create a file for the server block file
+```
+sudo nvim /etc/nginx/conf.d/(However you name it, ex: task3_webgen).conf
+```
+
+Then add the code the file 
+```
+server {
+    listen 80;
+    listen [::]:80;
+    
+    server_name <Your IP address on Digital Ocean>;
+    
+    root /var/lib/webgen/HTML;
+    index index.html;
+
+    location /documents {
+        root /var/lib/webgen;
+        autoindex on;               
+        autoindex_exact_size off;   
+        autoindex_localtime on;      
+    }
+
+	location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+Now that you're done, you can test it by typing,
+```
+sudo nginx -t
+```
+
+You can also the type the command (below)
+```
+sudo systemctl daemon-reload
+```
+
+- Type this code, so it can start and enable
+```
+sudo systemctl start nginx
+```
+```
+sudo systemctl enable nginx
+```
+
+to check if ngnix works, type:
+```
+sudo systemctl status nginx
+```
+
+----
+
+# Task 4
+
+We are going to install ufw, to start, type:
+```
+sudo pacman -S ufw
+```
+
+For the SSH and HTTP, type:
+```
+sudo ufw allow ssh
+```
+```
+sudo ufw allow http
+```
+
+After that, we are going to set by limiting the SSH rate
+```
+sudo ufw limit ssh
+```
+
+To enable ufw, type:
+```
+sudo ufw enable
+```
+
+You can also see the status of your ufw by typing,
+```
+sudo ufw status verbose
+```
+
