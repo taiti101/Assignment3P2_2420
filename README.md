@@ -147,11 +147,13 @@ sudo systemctl enable generate-index.service
 sudo systemctl start generate-index.timer
 sudo systemctl enable generate-index.timer
 ```
+![Screenshot 2024-12-03 225911](https://github.com/user-attachments/assets/3c94e7c1-3d73-4313-880e-1d26d9260e47)
 
 You can check your services status by typing:
 ```
 sudo systemctl status generate-index.service
 ```
+
 
 ----
 
