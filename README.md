@@ -18,7 +18,7 @@ Step 9. Then, create Droplet
 ```
 Picture for Step 5
 ![Screenshot 2024-12-03 233926](https://github.com/user-attachments/assets/926d31d5-3d6f-4d86-a749-ef8f05e67d48)
-Here is a picture of what it suppose to look like
+Here is a picture of what it suppose to look like (after you're done creating the Droplet)
 ![Screenshot 2024-12-03 231154](https://github.com/user-attachments/assets/59bf5562-8812-428f-838c-495a45f8a6f4)
 
 ----
